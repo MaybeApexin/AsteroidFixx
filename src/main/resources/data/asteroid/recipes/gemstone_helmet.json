@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "asteroid:ruby"
+    }
+  },
+  "result": {
+    "item": "asteroid:gemstone_helmet"
+  }
+}

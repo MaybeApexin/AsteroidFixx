@@ -1,0 +1,33 @@
+{
+ "itemGroup.asteroid.library": "Asteroid Main",
+ "itemGroup.asteroid.miscellaneous": "Asteroid Miscellaneous",
+ "itemGroup.asteroid.blocks": "Asteroid Blocks",
+
+ "item.asteroid.ruby": "Ruby",
+ "item.asteroid.emerald_shard": "Emerald Shard",
+
+ "block.asteroid.gemstone_ore": "Ruby Ore",
+
+ "item.asteroid.gemstone_sword": "Gemstone Sword",
+ "item.asteroid.gemstone_bow": "Gemstone Bow",
+ "item.asteroid.gemstone_pickaxe": "Gemstone Pickaxe",
+ "item.asteroid.gemstone_axe": "Gemstone Axe",
+ "item.asteroid.gemstone_shovel": "Gemstone Shovel",
+
+ "item.asteroid.gemstone_shield": "Gemstone Shield",
+ "item.asteroid.gemstone_helmet": "Gemstone Helmet",
+ "item.asteroid.gemstone_chestplate": "Gemstone Chestplate",
+ "item.asteroid.gemstone_leggings": "Gemstone Leggings",
+ "item.asteroid.gemstone_boots": "Gemstone Boots",
+ "item.asteroid.emerald_helmet": "Emerald Helmet",
+ "item.asteroid.emerald_chestplate": "Emerald Chestplate",
+ "item.asteroid.emerald_leggings": "Emerald Leggings",
+ "item.asteroid.emerald_boots": "Emerald Boots",
+ "item.asteroid.emerald_sword": "Emerald Sword",
+ "item.asteroid.emerald_pickaxe": "Emerald Pickaxe",
+ "item.asteroid.emerald_axe": "Emerald Axe",
+ "item.asteroid.emerald_shovel": "Emerald Shovel",
+
+ "item.asteroid.bowl_o_rice": "Bowl O' Rice",
+ "item.asteroid.emerald_apple": "Emerald Apple"
+}

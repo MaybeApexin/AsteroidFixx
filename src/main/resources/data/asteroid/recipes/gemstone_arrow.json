@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "V",
+    "X",
+    "Y"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:stick"
+    },
+    "V": {
+      "item": "asteroid:ruby"
+    },
+    "Y": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "item": "asteroid:emerald_boots"
+  }
+}

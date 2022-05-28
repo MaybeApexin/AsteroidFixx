@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "asteroid:ruby"
+    }
+  },
+  "result": {
+    "item": "asteroid:gemstone_sword"
+  }
+}
