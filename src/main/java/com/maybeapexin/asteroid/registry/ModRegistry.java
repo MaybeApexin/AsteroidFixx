@@ -4,6 +4,7 @@ import com.maybeapexin.asteroid.Asteroid;
 import com.maybeapexin.asteroid.registry.items.armor.BaseArmor;
 import com.maybeapexin.asteroid.registry.items.armor.EmeraldArmorMaterial;
 import com.maybeapexin.asteroid.registry.items.armor.GemArmorMaterial;
+import com.maybeapexin.asteroid.registry.items.fluids.Acid;
 import com.maybeapexin.asteroid.registry.items.food.BowlOfRice;
 import com.maybeapexin.asteroid.registry.items.food.EmeraldApple;
 import com.maybeapexin.asteroid.registry.items.resources.EmeraldShard;
@@ -12,17 +13,24 @@ import com.maybeapexin.asteroid.registry.items.tools.*;
 import com.maybeapexin.asteroid.registry.items.weapons.EmeraldSword;
 import com.maybeapexin.asteroid.registry.items.weapons.GemBow;
 import com.maybeapexin.asteroid.registry.items.weapons.GemSword;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.FluidBlock;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
+import net.minecraft.fluid.FlowableFluid;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+
+
 public class ModRegistry {
 
 
-
+    public static FlowableFluid STILL_ACID;
+    public static FlowableFluid FLOWING_ACID;
+    public static Item ACID_BUCKET;
+    public static Block ACID;
 
     public static final ArmorMaterial GEMSTONE_ARMOR = new GemArmorMaterial();
 
@@ -56,6 +64,11 @@ public class ModRegistry {
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "emerald_leggings"), new BaseArmor(EMERALD_ARMOR, EquipmentSlot.LEGS));
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "emerald_boots"), new BaseArmor(EMERALD_ARMOR, EquipmentSlot.FEET));
 
-
+        // Acid Fluid
+        ACID = Registry.register(Registry.BLOCK, new Identifier(Asteroid.MOD_ID, "acid"), new FluidBlock(STILL_ACID, FabricBlockSettings.copy(Blocks.WATER)){});
+        STILL_ACID = Registry.register(Registry.FLUID, new Identifier(Asteroid.MOD_ID, "acid"), new Acid.Still());
+        FLOWING_ACID = Registry.register(Registry.FLUID, new Identifier(Asteroid.MOD_ID, "flowing_acid"), new Acid.Flowing());
+        ACID_BUCKET = Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "acid_bucket"),
+                new BucketItem(STILL_ACID, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1).group(AsteroidItemGroups.ITEM_GROUP)));
     }
 }
