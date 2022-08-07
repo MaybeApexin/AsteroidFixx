@@ -3,7 +3,6 @@ package com.maybeapexin.asteroid.registry.items.weapons;
 import com.maybeapexin.asteroid.registry.AsteroidItemGroups;
 import net.minecraft.item.BowItem;
 import net.minecraft.item.Item;
-import net.minecraft.util.Rarity;
 
 public class GemBow {
 

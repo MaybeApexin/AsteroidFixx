@@ -6,7 +6,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.util.Rarity;
 
 public class GemSword {
     public static final SwordItem GEMSTONE_SWORD = new SwordItem(new ToolMaterial() {

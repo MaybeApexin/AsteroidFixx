@@ -2,7 +2,6 @@ package com.maybeapexin.asteroid.registry.items.weapons;
 
 import com.maybeapexin.asteroid.registry.AsteroidItemGroups;
 import com.maybeapexin.asteroid.registry.items.resources.EmeraldShard;
-import com.maybeapexin.asteroid.registry.items.resources.RubyGem;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
