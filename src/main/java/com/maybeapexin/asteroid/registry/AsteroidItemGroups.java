@@ -1,6 +1,5 @@
 package com.maybeapexin.asteroid.registry;
 
-import com.maybeapexin.asteroid.registry.items.resources.EmeraldShard;
 import com.maybeapexin.asteroid.registry.items.resources.RubyGem;
 import com.maybeapexin.asteroid.registry.items.food.BowlOfRice;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
