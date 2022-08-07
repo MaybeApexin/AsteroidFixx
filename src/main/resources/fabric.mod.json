@@ -3,8 +3,8 @@
   "id": "asteroid",
   "version": "1.0.0",
 
-  "name": "Asteroid Library",
-  "description": "This is a fabric library which injects in new items from new versions and old features from old versions of mc, Also can be used to work on as a base",
+  "name": "Asteroid Rewritten",
+  "description": "A mod that adds new recipes and ores for tools and unused resources.",
   "authors": [
     "MaybeApexin"
   ],
