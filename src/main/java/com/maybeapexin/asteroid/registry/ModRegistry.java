@@ -63,12 +63,13 @@ public class ModRegistry {
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "emerald_chestplate"), new BaseArmor(EMERALD_ARMOR, EquipmentSlot.CHEST));
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "emerald_leggings"), new BaseArmor(EMERALD_ARMOR, EquipmentSlot.LEGS));
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "emerald_boots"), new BaseArmor(EMERALD_ARMOR, EquipmentSlot.FEET));
-
+/* 
         // Acid Fluid
         ACID = Registry.register(Registry.BLOCK, new Identifier(Asteroid.MOD_ID, "acid"), new FluidBlock(STILL_ACID, FabricBlockSettings.copy(Blocks.WATER)){});
         STILL_ACID = Registry.register(Registry.FLUID, new Identifier(Asteroid.MOD_ID, "acid"), new Acid.Still());
         FLOWING_ACID = Registry.register(Registry.FLUID, new Identifier(Asteroid.MOD_ID, "flowing_acid"), new Acid.Flowing());
         ACID_BUCKET = Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "acid_bucket"),
                 new BucketItem(STILL_ACID, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1).group(AsteroidItemGroups.ITEM_GROUP)));
+                */
     }
 }
