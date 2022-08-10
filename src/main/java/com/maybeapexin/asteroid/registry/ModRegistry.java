@@ -14,26 +14,36 @@ import com.maybeapexin.asteroid.registry.items.weapons.EmeraldSword;
 import com.maybeapexin.asteroid.registry.items.weapons.GemBow;
 import com.maybeapexin.asteroid.registry.items.weapons.GemSword;
 
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.world.gen.GenerationStep;
 
 
 public class ModRegistry {
 
 
-    /* public static FlowableFluid STILL_ACID;
-    public static FlowableFluid FLOWING_ACID;
-    public static Item ACID_BUCKET;
-    public static Block ACID; */
+   
 
     public static final ArmorMaterial GEMSTONE_ARMOR = new GemArmorMaterial();
 
     public static final ArmorMaterial EMERALD_ARMOR = new EmeraldArmorMaterial();
 
     public static void registerItems() {
+    	// Block Generation
+    	Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+    			new Identifier(Asteroid.MOD_ID, "gemstone_ore"), Asteroid.GEMSTONE_ORE_CONFIG_GEN);
+    	Registry.register(BuiltinRegistries.PLACED_FEATURE,
+    			new Identifier(Asteroid.MOD_ID, "gemstone_ore"), Asteroid.GEMSTONE_ORE_PLACED_GEN);
+    	BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
+    			RegistryKey.of(Registry.PLACED_FEATURE_KEY,
+    					new Identifier(Asteroid.MOD_ID, "gemstone_ore")));
         // Block(s)
         Registry.register(Registry.BLOCK, new Identifier(Asteroid.MOD_ID, "gemstone_ore"), GemstoneOre.GEMSTONE_ORE_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "gemstone_ore"), new BlockItem(GemstoneOre.GEMSTONE_ORE_BLOCK, new FabricItemSettings().group(AsteroidItemGroups.BLOCK_GROUP)));
@@ -63,13 +73,6 @@ public class ModRegistry {
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "emerald_chestplate"), new BaseArmor(EMERALD_ARMOR, EquipmentSlot.CHEST));
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "emerald_leggings"), new BaseArmor(EMERALD_ARMOR, EquipmentSlot.LEGS));
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "emerald_boots"), new BaseArmor(EMERALD_ARMOR, EquipmentSlot.FEET));
-/* 
-        // Acid Fluid
-        ACID = Registry.register(Registry.BLOCK, new Identifier(Asteroid.MOD_ID, "acid"), new FluidBlock(STILL_ACID, FabricBlockSettings.copy(Blocks.WATER)){});
-        STILL_ACID = Registry.register(Registry.FLUID, new Identifier(Asteroid.MOD_ID, "acid"), new Acid.Still());
-        FLOWING_ACID = Registry.register(Registry.FLUID, new Identifier(Asteroid.MOD_ID, "flowing_acid"), new Acid.Flowing());
-        ACID_BUCKET = Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "acid_bucket"),
-                new BucketItem(STILL_ACID, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1).group(AsteroidItemGroups.ITEM_GROUP)));
-                */
+    
     }
 }
