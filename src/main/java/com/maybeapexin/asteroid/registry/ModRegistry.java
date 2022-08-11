@@ -1,6 +1,7 @@
 package com.maybeapexin.asteroid.registry;
 
 import com.maybeapexin.asteroid.Asteroid;
+import com.maybeapexin.asteroid.registry.blocks.EmeraldNetherOre;
 import com.maybeapexin.asteroid.registry.blocks.GemstoneOre;
 import com.maybeapexin.asteroid.registry.items.armor.BaseArmor;
 import com.maybeapexin.asteroid.registry.items.armor.EmeraldArmorMaterial;
@@ -47,6 +48,8 @@ public class ModRegistry {
         // Block(s)
         Registry.register(Registry.BLOCK, new Identifier(Asteroid.MOD_ID, "gemstone_ore"), GemstoneOre.GEMSTONE_ORE_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "gemstone_ore"), new BlockItem(GemstoneOre.GEMSTONE_ORE_BLOCK, new FabricItemSettings().group(AsteroidItemGroups.BLOCK_GROUP)));
+        Registry.register(Registry.BLOCK, new Identifier(Asteroid.MOD_ID, "emerald_nether_ore"), EmeraldNetherOre.EMERALD_NETHER_ORE);
+        Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "emerald_nether_ore"), new BlockItem(EmeraldNetherOre.EMERALD_NETHER_ORE, new FabricItemSettings().group(AsteroidItemGroups.BLOCK_GROUP)));
         // Misc Items
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "bowl_o_rice"), BowlOfRice.BOWL_O_RICE);
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "emerald_apple"), EmeraldApple.EMERALD_APPLE);

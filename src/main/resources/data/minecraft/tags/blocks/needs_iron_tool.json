@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "asteroid:gemstone_ore"
+        "asteroid:gemstone_ore",
+        "asteroid:emerald_nether_ore"
     ]
 }
