@@ -45,6 +45,14 @@ public class ModRegistry {
     	BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
     			RegistryKey.of(Registry.PLACED_FEATURE_KEY,
     					new Identifier(Asteroid.MOD_ID, "gemstone_ore")));
+    	
+    	Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+    			new Identifier(Asteroid.MOD_ID, "emerald_nether_ore"), Asteroid.EMERALD_NETHER_ORE_CONFIG_GEN);
+    	Registry.register(BuiltinRegistries.PLACED_FEATURE,
+    			new Identifier(Asteroid.MOD_ID, "emerald_nether_ore"), Asteroid.EMERALD_NETHER_ORE_PLACED_GEN);
+    	BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES,
+    			RegistryKey.of(Registry.PLACED_FEATURE_KEY,
+    					new Identifier(Asteroid.MOD_ID, "emerald_nether_ore")));
         // Block(s)
         Registry.register(Registry.BLOCK, new Identifier(Asteroid.MOD_ID, "gemstone_ore"), GemstoneOre.GEMSTONE_ORE_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "gemstone_ore"), new BlockItem(GemstoneOre.GEMSTONE_ORE_BLOCK, new FabricItemSettings().group(AsteroidItemGroups.BLOCK_GROUP)));
