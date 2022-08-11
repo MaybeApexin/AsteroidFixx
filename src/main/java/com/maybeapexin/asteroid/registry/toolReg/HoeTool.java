@@ -1,4 +1,4 @@
-package com.maybeapexin.asteroid.registry.objReg;
+package com.maybeapexin.asteroid.registry.toolReg;
 
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.ToolMaterial;

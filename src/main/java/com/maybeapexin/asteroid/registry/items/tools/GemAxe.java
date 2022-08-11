@@ -2,7 +2,8 @@ package com.maybeapexin.asteroid.registry.items.tools;
 
 import com.maybeapexin.asteroid.registry.AsteroidItemGroups;
 import com.maybeapexin.asteroid.registry.items.resources.RubyGem;
-import com.maybeapexin.asteroid.registry.objReg.AxeTool;
+import com.maybeapexin.asteroid.registry.toolReg.AxeTool;
+
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
