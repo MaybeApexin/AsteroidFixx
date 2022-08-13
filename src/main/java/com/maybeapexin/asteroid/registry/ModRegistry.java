@@ -8,7 +8,6 @@ import com.maybeapexin.asteroid.registry.items.armor.EmeraldArmorMaterial;
 import com.maybeapexin.asteroid.registry.items.armor.GemArmorMaterial;
 import com.maybeapexin.asteroid.registry.items.food.BowlOfRice;
 import com.maybeapexin.asteroid.registry.items.food.EmeraldApple;
-import com.maybeapexin.asteroid.registry.items.resources.EmeraldShard;
 import com.maybeapexin.asteroid.registry.items.resources.RubyGem;
 import com.maybeapexin.asteroid.registry.items.tools.*;
 import com.maybeapexin.asteroid.registry.items.weapons.EmeraldSword;
