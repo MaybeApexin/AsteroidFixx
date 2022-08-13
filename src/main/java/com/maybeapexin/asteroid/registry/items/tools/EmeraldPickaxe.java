@@ -5,6 +5,7 @@ import com.maybeapexin.asteroid.registry.items.resources.EmeraldShard;
 import com.maybeapexin.asteroid.registry.toolReg.PickaxeTool;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -42,7 +43,7 @@ public class EmeraldPickaxe {
 
         @Override
         public Ingredient getRepairIngredient() {
-            return Ingredient.ofItems(EmeraldShard.EMERALD_SHARD);
+            return Ingredient.ofItems(Items.EMERALD);
         }
     }, 1, -2.6f, new Item.Settings().group(AsteroidItemGroups.ITEM_GROUP).maxCount(1));
 }

@@ -3,6 +3,7 @@ package com.maybeapexin.asteroid.registry.items.tools;
 import com.maybeapexin.asteroid.registry.AsteroidItemGroups;
 import com.maybeapexin.asteroid.registry.items.resources.EmeraldShard;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -37,7 +38,7 @@ public class EmeraldShovel {
 
         @Override
         public Ingredient getRepairIngredient() {
-            return Ingredient.ofItems(EmeraldShard.EMERALD_SHARD);
+            return Ingredient.ofItems(Items.EMERALD);
         }
     }, 1f, -1.7f, new Item.Settings().group(AsteroidItemGroups.ITEM_GROUP));
 }
