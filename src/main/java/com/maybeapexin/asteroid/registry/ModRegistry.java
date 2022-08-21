@@ -15,16 +15,11 @@ import com.maybeapexin.asteroid.registry.items.tools.*;
 import com.maybeapexin.asteroid.registry.items.weapons.EmeraldSword;
 import com.maybeapexin.asteroid.registry.items.weapons.GemBow;
 import com.maybeapexin.asteroid.registry.items.weapons.GemSword;
-
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
-import net.minecraft.entity.EntityDimensions;
-import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.SpawnGroup;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
@@ -42,8 +37,7 @@ public class ModRegistry {
 
     public static final ArmorMaterial EMERALD_ARMOR = new EmeraldArmorMaterial();
 
-    @SuppressWarnings("unused")
-	public static void registerItems() {
+    public static void registerItems() {
     	// Block Generation
     	Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
     			new Identifier(Asteroid.MOD_ID, "gemstone_ore"), Asteroid.GEMSTONE_ORE_CONFIG_GEN);
@@ -60,13 +54,7 @@ public class ModRegistry {
     	BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES,
     			RegistryKey.of(Registry.PLACED_FEATURE_KEY,
     					new Identifier(Asteroid.MOD_ID, "emerald_nether_ore")));
-    	// Entities
-    	final EntityType<ColossalSquid> COLOSSAL_SQUID = Registry.register(
-    			Registry.ENTITY_TYPE,
-    			new Identifier(Asteroid.MOD_ID, "colossal_squid"),
-    			FabricEntityTypeBuilder.create(SpawnGroup.UNDERGROUND_WATER_CREATURE, ColossalSquid::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build()
-    			);
-    	FabricDefaultAttributeRegistry.register(COLOSSAL_SQUID, ColossalSquid.createMobAttributes());
+    	
         // Block(s)
         Registry.register(Registry.BLOCK, new Identifier(Asteroid.MOD_ID, "gemstone_ore"), GemstoneOre.GEMSTONE_ORE_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "gemstone_ore"), new BlockItem(GemstoneOre.GEMSTONE_ORE_BLOCK, new FabricItemSettings().group(AsteroidItemGroups.BLOCK_GROUP)));
