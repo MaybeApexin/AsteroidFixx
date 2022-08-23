@@ -5,15 +5,7 @@ import java.util.Arrays;
 import com.maybeapexin.asteroid.registry.ModRegistry;
 import com.maybeapexin.asteroid.registry.blocks.EmeraldNetherOre;
 import com.maybeapexin.asteroid.registry.blocks.GemstoneOre;
-import com.maybeapexin.asteroid.registry.entities.ColossalSquid;
-
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
-import net.minecraft.entity.EntityDimensions;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SpawnGroup;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
