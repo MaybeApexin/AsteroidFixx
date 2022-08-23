@@ -5,6 +5,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 
 public class GemstoneOre {
-    public static final Block GEMSTONE_ORE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(20.5f).requiresTool());
+    public static final Block GEMSTONE_ORE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(15.3f).requiresTool());
     
 }
