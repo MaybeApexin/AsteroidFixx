@@ -5,8 +5,10 @@ import com.maybeapexin.asteroid.registry.blocks.EmeraldNetherOre;
 import com.maybeapexin.asteroid.registry.blocks.GemstoneBlock;
 import com.maybeapexin.asteroid.registry.blocks.GemstoneOre;
 import com.maybeapexin.asteroid.registry.items.armor.BaseArmor;
+import com.maybeapexin.asteroid.registry.items.armor.CryingObsidianArmorMaterial;
 import com.maybeapexin.asteroid.registry.items.armor.EmeraldArmorMaterial;
 import com.maybeapexin.asteroid.registry.items.armor.GemArmorMaterial;
+import com.maybeapexin.asteroid.registry.items.armor.ObsidianArmorMaterial;
 import com.maybeapexin.asteroid.registry.items.food.BowlOfRice;
 import com.maybeapexin.asteroid.registry.items.food.EmeraldApple;
 import com.maybeapexin.asteroid.registry.items.food.Surstromming;
@@ -36,6 +38,10 @@ public class ModRegistry {
 
     public static final ArmorMaterial EMERALD_ARMOR = new EmeraldArmorMaterial();
 
+    public static final ArmorMaterial OBSIDIAN_ARMOR = new ObsidianArmorMaterial();
+    
+    public static final ArmorMaterial CRYING_OBSIDIAN_ARMOR = new CryingObsidianArmorMaterial();
+    		
     public static void registerItems() {
     	// Block Generation
     	Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
@@ -87,6 +93,17 @@ public class ModRegistry {
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "emerald_chestplate"), new BaseArmor(EMERALD_ARMOR, EquipmentSlot.CHEST));
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "emerald_leggings"), new BaseArmor(EMERALD_ARMOR, EquipmentSlot.LEGS));
         Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "emerald_boots"), new BaseArmor(EMERALD_ARMOR, EquipmentSlot.FEET));
+        // Obsidian Armor
+        Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_helmet"), new BaseArmor(OBSIDIAN_ARMOR, EquipmentSlot.HEAD));
+        Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_chestplate"), new BaseArmor(OBSIDIAN_ARMOR, EquipmentSlot.CHEST));
+        Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_leggings"), new BaseArmor(OBSIDIAN_ARMOR, EquipmentSlot.LEGS));
+        Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_boots"), new BaseArmor(OBSIDIAN_ARMOR, EquipmentSlot.FEET));
+        // Crying Obsidian Armor
+        Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_helmet"), new BaseArmor(CRYING_OBSIDIAN_ARMOR, EquipmentSlot.HEAD));
+        Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_chestplate"), new BaseArmor(CRYING_OBSIDIAN_ARMOR, EquipmentSlot.CHEST));
+        Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_leggings"), new BaseArmor(CRYING_OBSIDIAN_ARMOR, EquipmentSlot.LEGS));
+        Registry.register(Registry.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_boots"), new BaseArmor(CRYING_OBSIDIAN_ARMOR, EquipmentSlot.FEET));
+    
     
     }
 }

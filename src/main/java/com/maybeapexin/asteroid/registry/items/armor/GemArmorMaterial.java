@@ -14,7 +14,7 @@ public class GemArmorMaterial  implements ArmorMaterial {
     @Override
     public int getDurability(EquipmentSlot arg0) {
 
-        return BASE_DURABILITY[arg0.getEntitySlotId()]*32;
+        return BASE_DURABILITY[arg0.getEntitySlotId()]*29;
     }
 
     @Override
@@ -49,6 +49,6 @@ public class GemArmorMaterial  implements ArmorMaterial {
 
     @Override
     public float getKnockbackResistance() {
-        return 0;
+        return 0.5f;
     }
 }
