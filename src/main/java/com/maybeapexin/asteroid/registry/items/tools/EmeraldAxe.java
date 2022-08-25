@@ -12,12 +12,12 @@ public class EmeraldAxe {
     public static final AxeTool EMERALD_AXE = new AxeTool(new ToolMaterial() {
         @Override
         public int getDurability() {
-            return 750;
+            return 500;
         }
 
         @Override
         public float getMiningSpeedMultiplier() {
-            return 13;
+            return 10;
         }
 
         @Override

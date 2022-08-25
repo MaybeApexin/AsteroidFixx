@@ -13,13 +13,13 @@ public class EmeraldPickaxe {
         @Override
         public int getDurability() {
 
-            return 1000;
+            return 560;
         }
 
         @Override
         public float getMiningSpeedMultiplier() {
 
-            return 45;
+            return 35;
         }
 
         @Override

@@ -12,12 +12,12 @@ public class EmeraldShovel {
     public static final ShovelItem EMERALD_SHOVEL = new ShovelItem(new ToolMaterial() {
         @Override
         public int getDurability() {
-            return 450;
+            return 400;
         }
 
         @Override
         public float getMiningSpeedMultiplier() {
-            return 45;
+            return 35;
         }
 
         @Override

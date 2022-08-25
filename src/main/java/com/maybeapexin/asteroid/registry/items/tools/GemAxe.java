@@ -12,12 +12,12 @@ public class GemAxe {
     public static final AxeTool GEMSTONE_AXE = new AxeTool(new ToolMaterial() {
         @Override
         public int getDurability() {
-            return 750;
+            return 650;
         }
 
         @Override
         public float getMiningSpeedMultiplier() {
-            return 13;
+            return 15;
         }
 
         @Override

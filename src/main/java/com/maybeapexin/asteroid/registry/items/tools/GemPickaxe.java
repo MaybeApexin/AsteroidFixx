@@ -13,7 +13,7 @@ public class GemPickaxe {
         @Override
         public int getDurability() {
 
-            return 1000;
+            return 750;
         }
 
         @Override
