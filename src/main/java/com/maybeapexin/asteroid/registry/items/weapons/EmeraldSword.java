@@ -1,6 +1,6 @@
 package com.maybeapexin.asteroid.registry.items.weapons;
 
-import com.maybeapexin.asteroid.registry.AsteroidItemGroups;
+
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.SwordItem;
@@ -44,5 +44,5 @@ public class EmeraldSword {
 
             return Ingredient.ofItems(Items.EMERALD);
         }
-    }, 9, 5, new Item.Settings().group(AsteroidItemGroups.ITEM_GROUP));
+    }, 9, 5, new Item.Settings());
 }

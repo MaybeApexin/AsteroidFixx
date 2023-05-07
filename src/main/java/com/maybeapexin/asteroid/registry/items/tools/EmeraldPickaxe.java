@@ -1,6 +1,5 @@
 package com.maybeapexin.asteroid.registry.items.tools;
 
-import com.maybeapexin.asteroid.registry.AsteroidItemGroups;
 import com.maybeapexin.asteroid.registry.toolReg.PickaxeTool;
 
 import net.minecraft.item.Item;
@@ -44,5 +43,5 @@ public class EmeraldPickaxe {
         public Ingredient getRepairIngredient() {
             return Ingredient.ofItems(Items.EMERALD);
         }
-    }, 1, -2.6f, new Item.Settings().group(AsteroidItemGroups.ITEM_GROUP).maxCount(1));
+    }, 1, -2.6f, new Item.Settings().maxCount(1));
 }

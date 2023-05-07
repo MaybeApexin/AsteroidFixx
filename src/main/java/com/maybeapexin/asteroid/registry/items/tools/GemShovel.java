@@ -1,6 +1,6 @@
 package com.maybeapexin.asteroid.registry.items.tools;
 
-import com.maybeapexin.asteroid.registry.AsteroidItemGroups;
+
 import com.maybeapexin.asteroid.registry.items.resources.RubyGem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ShovelItem;
@@ -39,5 +39,5 @@ public class GemShovel {
         public Ingredient getRepairIngredient() {
             return Ingredient.ofItems(RubyGem.RUBY);
         }
-    }, 1.5f, -2.7f, new Item.Settings().group(AsteroidItemGroups.ITEM_GROUP));
+    }, 1.5f, -2.7f, new Item.Settings());
 }

@@ -1,6 +1,5 @@
 package com.maybeapexin.asteroid.registry.items.weapons;
 
-import com.maybeapexin.asteroid.registry.AsteroidItemGroups;
 import com.maybeapexin.asteroid.registry.items.resources.RubyGem;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
@@ -44,5 +43,5 @@ public class GemSword {
 
             return Ingredient.ofItems(RubyGem.RUBY);
         }
-    }, 21, 5, new Item.Settings().group(AsteroidItemGroups.ITEM_GROUP));
+    }, 21, 5, new Item.Settings());
 }

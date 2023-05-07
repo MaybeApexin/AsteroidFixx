@@ -1,6 +1,6 @@
 package com.maybeapexin.asteroid.registry.items.tools;
 
-import com.maybeapexin.asteroid.registry.AsteroidItemGroups;
+
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.ShovelItem;
@@ -39,5 +39,5 @@ public class EmeraldShovel {
         public Ingredient getRepairIngredient() {
             return Ingredient.ofItems(Items.EMERALD);
         }
-    }, 1f, -1.7f, new Item.Settings().group(AsteroidItemGroups.ITEM_GROUP));
+    }, 1f, -1.7f, new Item.Settings());
 }

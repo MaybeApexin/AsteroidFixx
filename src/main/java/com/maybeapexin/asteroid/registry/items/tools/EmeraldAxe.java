@@ -1,6 +1,5 @@
 package com.maybeapexin.asteroid.registry.items.tools;
 
-import com.maybeapexin.asteroid.registry.AsteroidItemGroups;
 import com.maybeapexin.asteroid.registry.toolReg.AxeTool;
 
 import net.minecraft.item.Item;
@@ -39,5 +38,5 @@ public class EmeraldAxe {
         public Ingredient getRepairIngredient() {
             return Ingredient.ofItems(Items.EMERALD);
         }
-    }, 7.5f, -1.2f, new Item.Settings().group(AsteroidItemGroups.ITEM_GROUP));
+    }, 7.5f, -1.2f, new Item.Settings());
 }

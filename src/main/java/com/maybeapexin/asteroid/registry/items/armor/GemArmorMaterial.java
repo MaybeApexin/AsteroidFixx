@@ -1,7 +1,7 @@
 package com.maybeapexin.asteroid.registry.items.armor;
 
 import com.maybeapexin.asteroid.registry.items.resources.RubyGem;
-import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
@@ -12,14 +12,13 @@ public class GemArmorMaterial  implements ArmorMaterial {
     private static final int[] PROTECTION_AMOUNTS = new int[] {2, 5, 6, 3};
 
     @Override
-    public int getDurability(EquipmentSlot arg0) {
-
-        return BASE_DURABILITY[arg0.getEntitySlotId()]*29;
+    public int getDurability(ArmorItem.Type type) {
+        return BASE_DURABILITY[0]*29;
     }
 
     @Override
-    public int getProtectionAmount(EquipmentSlot arg0) {
-        return PROTECTION_AMOUNTS[arg0.getEntitySlotId()];
+    public int getProtection(ArmorItem.Type type) {
+        return PROTECTION_AMOUNTS[0];
     }
 
     @Override

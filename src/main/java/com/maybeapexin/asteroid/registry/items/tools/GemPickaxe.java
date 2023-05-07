@@ -1,6 +1,6 @@
 package com.maybeapexin.asteroid.registry.items.tools;
 
-import com.maybeapexin.asteroid.registry.AsteroidItemGroups;
+
 import com.maybeapexin.asteroid.registry.items.resources.RubyGem;
 import com.maybeapexin.asteroid.registry.toolReg.PickaxeTool;
 
@@ -44,5 +44,5 @@ public class GemPickaxe {
         public Ingredient getRepairIngredient() {
             return Ingredient.ofItems(RubyGem.RUBY);
         }
-    }, 2, -2.1f, new Item.Settings().group(AsteroidItemGroups.ITEM_GROUP).maxCount(1));
+    }, 2, -2.1f, new Item.Settings().maxCount(1));
 }
