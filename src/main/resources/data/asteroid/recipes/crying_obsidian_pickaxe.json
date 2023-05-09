@@ -1,0 +1,12 @@
+{
+  "type": "smithing",
+  "base": { 
+  	"item": "asteroid:obsidian_pickaxe"
+  },
+  "addition": { 
+  	"item": "minecraft:crying_obsidian"
+  },
+  "result": { 
+  	"item": "asteroid:crying_obsidian_pickaxe"
+  }
+}

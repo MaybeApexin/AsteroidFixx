@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "asteroid:block/gemstone_block" }
+  }
+}
