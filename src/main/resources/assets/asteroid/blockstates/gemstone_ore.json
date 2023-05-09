@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "asteroid:blocks/gemstone_ore" }
+    "": { "model": "asteroid:block/gemstone_ore" }
   }
 }
