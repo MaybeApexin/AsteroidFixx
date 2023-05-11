@@ -21,6 +21,14 @@ import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
 
 import static com.maybeapexin.asteroid.registry.AsteroidItemGroups.ITEM_GROUP;
+import static com.maybeapexin.asteroid.registry.items.tools.CryingObsidianAxe.CRYING_OBSIDIAN_AXE;
+import static com.maybeapexin.asteroid.registry.items.tools.CryingObsidianPickaxe.CRYING_OBSIDIAN_PICKAXE;
+import static com.maybeapexin.asteroid.registry.items.tools.CryingObsidianShovel.CRYING_OBSIDIAN_SHOVEL;
+import static com.maybeapexin.asteroid.registry.items.tools.ObsidianAxe.OBSIDIAN_AXE;
+import static com.maybeapexin.asteroid.registry.items.tools.ObsidianPickaxe.OBSIDIAN_PICKAXE;
+import static com.maybeapexin.asteroid.registry.items.tools.ObsidianShovel.OBSIDIAN_SHOVEL;
+import static com.maybeapexin.asteroid.registry.items.weapons.CryingObsidianSword.CRYING_OBSIDIAN_SWORD;
+import static com.maybeapexin.asteroid.registry.items.weapons.ObsidianSword.OBSIDIAN_SWORD;
 
 
 public class ModRegistry {
@@ -89,20 +97,20 @@ public class ModRegistry {
         Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_leggings"), OBSIDIAN_LEGGINGS);
         Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_boots"), OBSIDIAN_BOOTS);
         // Obsidian Tools
-        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_sword"), ObsidianSword.OBSIDIAN_SWORD);
-        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_pickaxe"), ObsidianPickaxe.OBSIDIAN_PICKAXE);
-        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_axe"), ObsidianAxe.OBSIDIAN_AXE);
-        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_shovel"), ObsidianShovel.OBSIDIAN_SHOVEL);
+        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_sword"), OBSIDIAN_SWORD);
+        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_pickaxe"), OBSIDIAN_PICKAXE);
+        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_axe"), OBSIDIAN_AXE);
+        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "obsidian_shovel"), OBSIDIAN_SHOVEL);
         // Crying Obsidian Armor
         Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_helmet"), CRYING_OBSIDIAN_HELMET);
         Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_chestplate"), CRYING_OBSIDIAN_CHESTPLATE);
         Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_leggings"), CRYING_OBSIDIAN_LEGGINGS);
         Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_boots"), CRYING_OBSIDIAN_BOOTS);
         // Crying Obsidian Tools
-        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_sword"), CryingObsidianSword.CRYING_OBSIDIAN_SWORD);
-        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_pickaxe"), CryingObsidianPickaxe.CRYING_OBSIDIAN_PICKAXE);
-        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_axe"), CryingObsidianAxe.CRYING_OBSIDIAN_AXE);
-        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_shovel"), CryingObsidianShovel.CRYING_OBSIDIAN_SHOVEL);
+        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_sword"), CRYING_OBSIDIAN_SWORD);
+        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_pickaxe"), CRYING_OBSIDIAN_PICKAXE);
+        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_axe"), CRYING_OBSIDIAN_AXE);
+        Registry.register(Registries.ITEM, new Identifier(Asteroid.MOD_ID, "crying_obsidian_shovel"), CRYING_OBSIDIAN_SHOVEL);
 
             ItemGroupEvents.modifyEntriesEvent(ITEM_GROUP).register(content -> {
                 content.add(GemSword.GEMSTONE_SWORD);
@@ -113,6 +121,14 @@ public class ModRegistry {
                 content.add(EmeraldPickaxe.EMERALD_PICKAXE);
                 content.add(EmeraldAxe.EMERALD_AXE);
                 content.add(EmeraldShovel.EMERALD_SHOVEL);
+                content.add(OBSIDIAN_SWORD);
+                content.add(OBSIDIAN_PICKAXE);
+                content.add(OBSIDIAN_AXE);
+                content.add(OBSIDIAN_SHOVEL);
+                content.add(CRYING_OBSIDIAN_SWORD);
+                content.add(CRYING_OBSIDIAN_PICKAXE);
+                content.add(CRYING_OBSIDIAN_AXE);
+                content.add(CRYING_OBSIDIAN_SHOVEL);
                 content.add(OBSIDIAN_HELMET);
                 content.add(OBSIDIAN_CHESTPLATE);
                 content.add(OBSIDIAN_LEGGINGS);

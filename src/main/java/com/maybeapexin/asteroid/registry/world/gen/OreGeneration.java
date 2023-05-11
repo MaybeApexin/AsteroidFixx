@@ -1,11 +1,9 @@
 package com.maybeapexin.asteroid.registry.world.gen;
 
 import com.maybeapexin.asteroid.registry.world.AsteroidPlacedFeatures;
-import net.fabricmc.fabric.api.biome.v1.BiomeModification;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.world.gen.GenerationStep;
-import net.minecraft.world.gen.feature.PlacedFeatures;
 
 public class OreGeneration {
     public static void generateGemstoneOres() {

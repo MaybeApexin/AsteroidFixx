@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "com.maybeapexin.asteroid.Asteroid"
+    ],
+    "fabric-datagen": [
+      "com.maybeapexin.asteroid.registry.DataGenerator"
     ]
   },
   "mixins": [

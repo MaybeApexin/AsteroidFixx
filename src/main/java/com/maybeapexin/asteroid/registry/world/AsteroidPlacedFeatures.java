@@ -2,7 +2,6 @@ package com.maybeapexin.asteroid.registry.world;
 
 import com.maybeapexin.asteroid.Asteroid;
 import net.minecraft.registry.Registerable;
-import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;

@@ -3,6 +3,7 @@ package com.maybeapexin.asteroid.registry.world;
 import com.maybeapexin.asteroid.Asteroid;
 import com.maybeapexin.asteroid.registry.blocks.EmeraldNetherOre;
 import com.maybeapexin.asteroid.registry.blocks.GemstoneOre;
+import com.maybeapexin.asteroid.registry.data.WorldGenerator;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -31,6 +32,7 @@ public class AsteroidConfiguredFeatures {
 
         register(context, GEMSTONE_KEY, Feature.ORE, new OreFeatureConfig(overworldGemstoneOres, 2));
         register(context, EMERALD_NETHER_KEY, Feature.ORE, new OreFeatureConfig(netherEmeraldOre, 3));
+
     }
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(Asteroid.MOD_ID, name));
